@@ -1,0 +1,15 @@
+app:
+  name: poi-backend-app
+  namespace: joshix
+  cluster: .apps.summit23-dr.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23DevRHEL/joshix-backend2
+  org: Summit23DevRHEL
+  name: joshix-backend2
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: joshix/poi-backend-app
+  tag: latest
